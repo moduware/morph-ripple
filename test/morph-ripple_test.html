@@ -32,11 +32,7 @@
             // assigning ripple fixture for this context. This will automatically removed on the teardown phase of this test context
             ripple = fixture('BasicTestFixture');
 
-            container = ripple.root.getElementById('container');
-            // mocking showRipple method of our morph-ripple
-
-            // morphRipple.showRipple = sinon.stub();
-            // sinon.stub(ripple, 'showRipple');
+            // stubbing showRipple method of our morph-ripple
             spy = sinon.stub(ripple, "showRipple");
           });
 
@@ -58,7 +54,6 @@
           });
 
         });
-
 
       });
 
