@@ -4,6 +4,13 @@ General ripple animation element for Polymorph Components
 ## Getting Started:
 For the information about how to clone the desired repository, running the local server and testing, please refer to this [link](https://github.com/moduware/polymorph-components/blob/master/INFO.md).
 
+## Styling
+
+
+Custom property                  | Description                            | Default
+---------------------------------|----------------------------------------|--------------------
+`--ripple-color`                 | Color of the ripple                    | #2196f3
+
 
 ## Demo
   - Here is a quick demo of the morph-ripple element.
@@ -57,11 +64,3 @@ For the information about how to clone the desired repository, running the local
     <morph-ripple></morph-ripple>
   </a>
   ```
-
-
-### Styling
-
-
-Custom property                  | Description                            | Default
----------------------------------|----------------------------------------|--------------------
-`--ripple-color`                 | Color of the ripple                    | #2196f3
