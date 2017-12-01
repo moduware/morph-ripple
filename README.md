@@ -15,7 +15,7 @@ Custom property                  | Description                            | Defa
 ## Demo
   - Here is a quick demo of the morph-ripple element.
 
-  ![alt text](https://user-images.githubusercontent.com/15607784/33458062-90b40f54-d5d9-11e7-9d65-4c2928d1193a.png)
+  ![alt text](demo-images/basic-demo.png)
 
 
   ```html
@@ -33,7 +33,7 @@ Custom property                  | Description                            | Defa
 
 
 
-  ![alt text](https://user-images.githubusercontent.com/15607784/33458209-2f1a51da-d5da-11e7-9cbc-dd7c21073ced.png)
+  ![alt text](demo-images/tabbar-demo.png)
 
 
   ```html
@@ -56,7 +56,7 @@ Custom property                  | Description                            | Defa
 - The code below shows how we use it inside the elements.
 
 
-  ![alt text](https://user-images.githubusercontent.com/15607784/33460189-dd317724-d5e1-11e7-9bd7-ca784e9aa012.png)
+  ![alt text](demo-images/button-demo.png)
 
   ```html
   <a href$="[[link]]" target$="[[target]]" rel$="[[relation]]">
