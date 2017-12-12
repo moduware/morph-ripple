@@ -19,33 +19,44 @@
       </template>
     </test-fixture>
 
-    <test-fixture id="ChangedPropertyTestFixture">
-      <template>
-        <morph-ripple prop1="new-prop1"></morph-ripple>
-      </template>
-    </test-fixture>
-
     <script>
-      suite('morph-ripple', () => {
+      
+      describe('morph-ripple', function() {
+        // testing default morph-ripple properties
+        context('Default properties', function() {
+          // declare variable for ripple in this context only
+          let ripple, spy;
 
-        test('instantiating the element with default properties works', () => {
-          const element = fixture('BasicTestFixture');
-          assert.equal(element.prop1, 'morph-ripple');
-          const elementShadowRoot = element.shadowRoot;
-          const elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello morph-ripple!');
-        });
-
-        test('setting a property on the element works', () => {
           // Create a test fixture
-          const element = fixture('ChangedPropertyTestFixture');
-          assert.equal(element.prop1, 'new-prop1');
-          const elementShadowRoot = element.shadowRoot;
-          const elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
+          beforeEach(function() {
+            // assigning ripple fixture for this context. This will automatically removed on the teardown phase of this test context
+            ripple = fixture('BasicTestFixture');
+
+            // stubbing showRipple method of our morph-ripple
+            spy = sinon.stub(ripple, "showRipple");
+          });
+
+          afterEach(function () {
+            ripple.showRipple.restore(); // Unwraps the spy
+          });
+
+          it('instantiating the button on android platform with default properties works', function() {
+            // testing for default colors and which platform was set in html markup
+            expect(ripple).to.be.ok;
+            
+          });
+
+          it('showRipple() method is called when morph-ripple is clicked', function() {
+            let mouseDown = new Event('down');
+            ripple.dispatchEvent(mouseDown);
+            // Count # of calls to showRipple
+            expect(spy.calledOnce).to.be.true;
+          });
+
         });
 
       });
+
     </script>
 
   </body>
