@@ -15,7 +15,9 @@ Custom property                  | Description                            | Defa
 ## Demo
   - Here is a quick demo of the morph-ripple element.
 
-  ![alt text](demo-images/basic-demo.png)
+  <p align="center" >
+  <img src="./demo-images/basic-demo.gif" alt="morph ripple demo image" />
+  </p>
 
 
   ```html
@@ -33,7 +35,9 @@ Custom property                  | Description                            | Defa
 
 
 
-  ![alt text](demo-images/tabbar-demo.png)
+<p align="center" >
+<img src="./demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
+</p>
 
 
   ```html
@@ -56,7 +60,9 @@ Custom property                  | Description                            | Defa
 - The code below shows how we use it inside the elements.
 
 
-  ![alt text](demo-images/button-demo.png)
+<p align="center" >
+<img src="./demo-images/button-demo.gif" alt="morph ripple demo image" />
+</p>
 
   ```html
   <a href$="[[link]]" target$="[[target]]" rel$="[[relation]]">
