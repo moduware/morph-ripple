@@ -17,10 +17,17 @@ For the information about how to clone the desired repository, running the local
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../morph-shared-colors/morph-shared-colors.html">
-    <link rel="import" href="../morph-shared-styles/morph-shared-styles.html">
-    <link rel="import" href="../morph-button/morph-button.html">
     <link rel="import" href="morph-ripple.html">
+    <custom-style>
+      <style is="custom-style">
+        .ripple-wrapper {
+          position: relative;
+          width: 140px; height: 70px;
+          border: 1px solid #ccc;
+          padding: 10px;
+        }
+      </style>
+    </custom-style>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -35,10 +42,6 @@ For the information about how to clone the desired repository, running the local
   <p>Click me!</p>
   <morph-ripple></morph-ripple>
 </div>
-<p>
-<p>Built-in in our morph-button component when on android platform. Click the button to see the ripple.</p>
-  <morph-button platform="android" filled big color="green">Button Android</morph-button>
-</p>
 
 ```
 
