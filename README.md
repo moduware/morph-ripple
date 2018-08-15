@@ -8,13 +8,49 @@ General ripple animation element for Polymorph Components
 
 For the information about how to clone the desired repository, running the local server and testing, please refer to Polymorph elements getting started docs at the end of this repository.
 
-## Styling
-
-Custom property                  | Description                            | Default
----------------------------------|----------------------------------------|--------------------
-`--ripple-color`                 | Color of the ripple                    | #2196f3
-
 ## Demo
+
+<!---
+
+  ```
+
+  <custom-element-demo>
+    <template>
+      <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+      <link rel="import" href="../morph-shared-colors/morph-shared-colors.html">
+      <link rel="import" href="../morph-shared-styles/morph-shared-styles.html">
+      <link rel="import" href="../morph-button/morph-button.html">
+      <link rel="import" href="morph-ripple.html">
+      <custom-style>
+        <style is="custom-style">
+          .ripple-wrapper {
+            position: relative;
+            width: 140px; height: 70px;
+            border: 1px solid #ccc;
+            padding: 10px;
+          }
+        </style>
+      </custom-style>
+      <next-code-block></next-code-block>
+    </template>
+  </custom-element-demo>
+  ```
+
+-->
+
+  ```html
+
+  <p>Usage examples</p>
+  <div class="ripple-wrapper">
+    <p>Click me!</p>
+    <morph-ripple></morph-ripple>
+  </div>
+  <p>
+  <p>Built-in in our morph-button component when on android platform. Click the button to see the ripple.</p>
+    <morph-button platform="android" filled big color="green">Button Android</morph-button>
+  </p>
+
+  ```
 
 - Here is a quick demo of the morph-ripple element.
 
@@ -66,6 +102,12 @@ Custom property                  | Description                            | Defa
   </a>
 
   ```
+
+## Styling
+
+Custom property                  | Description                            | Default
+---------------------------------|----------------------------------------|--------------------
+`--ripple-color`                 | Color of the ripple                    | #2196f3
 
 ## Further help
 
