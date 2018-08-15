@@ -15,6 +15,9 @@ For the information about how to clone the desired repository, running the local
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../morph-shared-colors/morph-shared-colors.html">
+    <link rel="import" href="../morph-shared-styles/morph-shared-styles.html">
+    <link rel="import" href="../morph-button/morph-button.html">
     <link rel="import" href="morph-ripple.html">
     <style>
       .ripple-wrapper {
@@ -32,15 +35,19 @@ For the information about how to clone the desired repository, running the local
 -->
 
 ```html
+
 <div class="ripple-wrapper">
   <p>Click me!</p>
   <morph-ripple></morph-ripple>
 </div>
+<p>morph-ripple is built-in on morph-button. It automatically add ripple effect when it detects an android device</p>
+<morph-button platform="android" filled big>Android Button</morph-button>
+
 ```
 
 - Morph-ripple demo on other elements.
 
-  <p align="center" >
+  <p align="center">
     <img src="./demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
   </p>
 
