@@ -35,14 +35,10 @@ For the information about how to clone the desired repository, running the local
 -->
 
 ```html
-
 <div class="ripple-wrapper">
   <p>Click me!</p>
   <morph-ripple></morph-ripple>
 </div>
-<p>morph-ripple is built-in on morph-button. It automatically add ripple effect when it detects an android device</p>
-<morph-button platform="android" filled big>Android Button</morph-button>
-
 ```
 
 - Morph-ripple demo on other elements.
