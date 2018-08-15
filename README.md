@@ -39,6 +39,10 @@ For the information about how to clone the desired repository, running the local
   <p>Click me!</p>
   <morph-ripple></morph-ripple>
 </div>
+<p>
+  You can click on the button below
+</p>
+<morph-button platform="android" filled big>android button</morph-button>
 ```
 
 - Morph-ripple demo on other elements.
