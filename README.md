@@ -21,7 +21,6 @@ For the information about how to clone the desired repository, running the local
     <link rel="import" href="../morph-shared-styles/morph-shared-styles.html">
     <link rel="import" href="../morph-button/morph-button.html">
     <link rel="import" href="morph-ripple.html">
-    
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
