@@ -21,11 +21,16 @@ For the information about how to clone the desired repository, running the local
     <link rel="import" href="morph-ripple.html">
     <style>
       .ripple-wrapper {
-        position: relative;
-        width: 90%; 
-        height: 70px;
+        width: 100%; 
+        height: 100px;
         border: 1px solid #ccc;
-        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 100px;
+      }
+
+      h3 {
+        margin: 0;
       }
     </style>
     <next-code-block></next-code-block>
@@ -36,11 +41,11 @@ For the information about how to clone the desired repository, running the local
 
 ```html
 <div class="ripple-wrapper">
-  <p>Click me!</p>
+  <h3>Click me!</h3>
   <morph-ripple></morph-ripple>
 </div>
 <p>
-  You can click on the button below
+  You can click on the button below to see the ripple
 </p>
 <morph-button platform="android" filled big>android button</morph-button>
 ```
