@@ -21,16 +21,7 @@ For the information about how to clone the desired repository, running the local
     <link rel="import" href="../morph-shared-styles/morph-shared-styles.html">
     <link rel="import" href="../morph-button/morph-button.html">
     <link rel="import" href="morph-ripple.html">
-    <custom-style>
-      <style is="custom-style">
-        .ripple-wrapper {
-          position: relative;
-          width: 140px; height: 70px;
-          border: 1px solid #ccc;
-          padding: 10px;
-        }
-      </style>
-    </custom-style>
+    
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
