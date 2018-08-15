@@ -11,40 +11,32 @@ For the information about how to clone the desired repository, running the local
 ## Demo
 
 <!---
-
 ```
-
 <custom-element-demo>
   <template>
     <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="morph-ripple.html">
+    <style>
+      .ripple-wrapper {
+        position: relative;
+        width: 90%; 
+        height: 70px;
+        border: 1px solid #ccc;
+        padding: 10px;
+      }
+    </style>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
 ```
-
 -->
 
 ```html
-
-<p>Usage examples</p>
-
+<div class="ripple-wrapper">
+  <p>Click me!</p>
+  <morph-ripple></morph-ripple>
+</div>
 ```
-
-- Here is a quick demo of the morph-ripple element.
-
-  <p align="center" >
-    <img src="./demo-images/basic-demo.gif" alt="morph ripple demo image" />
-  </p>
-
-  ```html
-
-  <template>
-    <div class="ripple-wrapper">
-      <morph-ripple></morph-ripple>
-    </div>
-  </template>
-
-  ```
 
 - Morph-ripple demo on other elements.
 
