@@ -21,6 +21,7 @@ For the information about how to clone the desired repository, running the local
     <link rel="import" href="morph-ripple.html">
     <style>
       .ripple-wrapper {
+        position: relative;
         width: 100%; 
         height: 100px;
         border: 1px solid #ccc;
