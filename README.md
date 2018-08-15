@@ -1,24 +1,26 @@
 # morph-ripple
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/PolymerElements/paper-progress)
+
 General ripple animation element for Polymorph Components
 
-## Getting Started:
-For the information about how to clone the desired repository, running the local server and testing, please refer to this [link](https://github.com/moduware/polymorph-components/blob/master/INFO.md).
+## Getting Started
+
+For the information about how to clone the desired repository, running the local server and testing, please refer to Polymorph elements getting started docs at the end of this repository.
 
 ## Styling
-
 
 Custom property                  | Description                            | Default
 ---------------------------------|----------------------------------------|--------------------
 `--ripple-color`                 | Color of the ripple                    | #2196f3
 
-
 ## Demo
-  - Here is a quick demo of the morph-ripple element.
+
+- Here is a quick demo of the morph-ripple element.
 
   <p align="center" >
-  <img src="./demo-images/basic-demo.gif" alt="morph ripple demo image" />
+    <img src="./demo-images/basic-demo.gif" alt="morph ripple demo image" />
   </p>
-
 
   ```html
 
@@ -30,15 +32,11 @@ Custom property                  | Description                            | Defa
 
   ```
 
-
 - Morph-ripple demo on other elements.
 
-
-
-<p align="center" >
-<img src="./demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
-</p>
-
+  <p align="center" >
+    <img src="./demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
+  </p>
 
   ```html
 
@@ -53,20 +51,24 @@ Custom property                  | Description                            | Defa
 
   ```
 
-
-
-
-
 - The code below shows how we use it inside the elements.
 
 
-<p align="center" >
-<img src="./demo-images/button-demo.gif" alt="morph ripple demo image" />
-</p>
+  <p align="center" >
+    <img src="./demo-images/button-demo.gif" alt="morph ripple demo image" />
+  </p>
 
   ```html
+
   <a href$="[[link]]" target$="[[target]]" rel$="[[relation]]">
     <slot></slot>
     <morph-ripple></morph-ripple>
   </a>
+
   ```
+
+## Further help
+
+For more information on how to install and run test please go here - [Polymorph elements getting started]
+
+[Polymorph elements getting started]: https://github.com/moduware/polymorph-components/blob/master/INFO.md
