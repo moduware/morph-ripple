@@ -16,6 +16,10 @@
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
     "wct-browser-legacy": "^1.0.1",
-    "@webcomponents/webcomponentsjs": "^2.0.0"
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "morph-element": "github:moduware/morph-element#polymer3",
+    "morph-tabbar": "github:moduware/morph-tabbar#polymer3",
+    "morph-shared-colors": "github:moduware/morph-shared-colors#polymer3",
+    "morph-shared-styles": "github:moduware/morph-shared-styles#polymer3"
   }
 }

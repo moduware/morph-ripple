@@ -10,13 +10,13 @@
 
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
-    <!-- <script type="module" src="/node_modules/morph-shared-colors/morph-shared-colors.js"></script> -->
-    <!-- <script type="module" src="/node_modules/morph-shared-styles/morph-shared-styles.js"></script> -->
-    <!-- <script type="module" src="/node_modules/morph-button/morph-button.js"></script> -->
-    <!-- <script type="module" src="../../../morph-tabbar/morph-tabbar.js"></script> -->
-    <!-- <script type="module" src="../../../morph-tabbar-item/morph-tabbar-item.js"></script> -->
+    <script type="module" src="../node_modules/@polymer/morph-shared-colors/morph-shared-colors.js"></script>
+    <script type="module" src="../node_modules/@polymer/morph-shared-styles/morph-shared-styles.js"></script>
+    <script type="module" src="../node_modules/@polymer/morph-tabbar/morph-tabbar.js"></script>
+    <script type="module" src="../node_modules/@polymer/morph-tabbar-item/morph-tabbar-item.js"></script> 
+    <!-- <script type="module" src="../node_modules/@polymer/morph-button/morph-button.js"></script> -->
 
-    <script type="module" src="../morph-ripple.js"></script>
+    <!-- <script type="module" src="../morph-ripple.js"></script> -->
 
     <!-- FIXME(polymer-modulizer):
         These imperative modules that innerHTML your HTML are
@@ -68,19 +68,14 @@
             </div>
           </template>
         </demo-snippet>
-        <h3>Morph-ripple demo on button</h3>
-        <demo-snippet>
-          <template>
-            <p><morph-button platform="android" filled="" big="" color="green">Button Android</morph-button></p>
-          </template>
-        </demo-snippet>
+
         <h3>Morph-ripple demo on tabbar</h3>
         <demo-snippet>
           <template>
             <morph-tabbar platform="android" selected="play">
-              <morph-tabbar-item platform="android" name="play" not-selected-image="../bower_components/morph-tabbar/img/play_android.svg" selected-image="../bower_components/morph-tabbar/img/play_android_selected.svg"></morph-tabbar-item>
-              <morph-tabbar-item platform="android" name="favorite" not-selected-image="../bower_components/morph-tabbar/img/favorite_android.svg" selected-image="../bower_components/morph-tabbar/img/favorite_android_selected.svg"></morph-tabbar-item>
-              <morph-tabbar-item platform="android" name="mic" not-selected-image="../bower_components/morph-tabbar/img/mic_android.svg" selected-image="../bower_components/morph-tabbar/img/mic_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="play" not-selected-image="../node_modules/@polymer/morph-tabbar/img/play_android.svg" selected-image="../node_modules/@polymer/morph-tabbar/img/play_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="favorite" not-selected-image="../node_modules/@polymer/morph-tabbar/img/favorite_android.svg" selected-image="../node_modules/@polymer/morph-tabbar/img/favorite_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="mic" not-selected-image="../node_modules/@polymer/morph-tabbar/img/mic_android.svg" selected-image="../node_modules/@polymer/morph-tabbar/img/mic_android_selected.svg"></morph-tabbar-item>
             </morph-tabbar>
           </template>
         </demo-snippet>

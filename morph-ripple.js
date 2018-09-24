@@ -4,6 +4,7 @@ import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
 import { timeOut } from '@polymer/polymer/lib/utils/async.js';
+
 /**
  * `morph-ripple`
  * General ripple animation element for Polymorph Components
