@@ -6,8 +6,8 @@
 
     <title>morph-ripple test</title>
 
-    <script src="../../../@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
-    <script src="../../../wct-browser-legacy/browser.js"></script>
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js"></script>
+    <script src="../node_modules/wct-browser-legacy/browser.js"></script>
 
     <script type="module" src="../morph-ripple.js"></script>
   </head>
@@ -20,44 +20,44 @@
     </test-fixture>
 
     <script type="module">
-import '../morph-ripple.js';
 
-describe('morph-ripple', function() {
-  // testing default morph-ripple properties
-  context('Default properties', function() {
-    // declare variable for ripple in this context only
-    let ripple, spy;
+      describe('morph-ripple', function() {
+        // testing default morph-ripple properties
+        context('Default properties', function() {
+          // declare variable for ripple in this context only
+          let ripple, spy;
 
-    // Create a test fixture
-    beforeEach(function() {
-      // assigning ripple fixture for this context. This will automatically removed on the teardown phase of this test context
-      ripple = fixture('BasicTestFixture');
+          // Create a test fixture
+          beforeEach(function() {
+            // assigning ripple fixture for this context. This will automatically removed on the teardown phase of this test context
+            ripple = fixture('BasicTestFixture');
 
-      // stubbing showRipple method of our morph-ripple
-      spy = sinon.stub(ripple, "showRipple");
-    });
+            // stubbing showRipple method of our morph-ripple
+            spy = sinon.stub(ripple, "showRipple");
+          });
 
-    afterEach(function () {
-      ripple.showRipple.restore(); // Unwraps the spy
-    });
+          afterEach(function () {
+            ripple.showRipple.restore(); // Unwraps the spy
+          });
 
-    it('instantiating the button on android platform with default properties works', function() {
-      // testing for default colors and which platform was set in html markup
-      expect(ripple).to.be.ok;
+          it('instantiating the button on android platform with default properties works', function() {
+            // testing for default colors and which platform was set in html markup
+            expect(ripple).to.be.ok;
+            
+          });
+
+          it('showRipple() method is called when morph-ripple is clicked', function() {
+            let mouseDown = new Event('down');
+            ripple.dispatchEvent(mouseDown);
+            // Count # of calls to showRipple
+            expect(spy.calledOnce).to.be.true;
+          });
+
+        });
+
+      });
       
-    });
-
-    it('showRipple() method is called when morph-ripple is clicked', function() {
-      let mouseDown = new Event('down');
-      ripple.dispatchEvent(mouseDown);
-      // Count # of calls to showRipple
-      expect(spy.calledOnce).to.be.true;
-    });
-
-  });
-
-});
-</script>
+    </script>
 
   </body>
 </html>
