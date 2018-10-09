@@ -1,6 +1,5 @@
-import { PolymerElement } from '@polymer/polymer/polymer-element.js';
+import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
 import '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
-import { html } from '@polymer/polymer/lib/utils/html-tag.js';
 import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
 import { timeOut } from '@polymer/polymer/lib/utils/async.js';
@@ -9,11 +8,11 @@ import { timeOut } from '@polymer/polymer/lib/utils/async.js';
  * `morph-ripple`
  * General ripple animation element for Polymorph Components
  *
- * @customElement
- * @polymer
+ * @polymerElement
+ * @extends HTMLElement
  * @demo demo/index.html
  */
-class MorphRipple extends PolymerElement {
+export class MorphRipple extends PolymerElement {
   static get template() {
     return html`
     <style>
