@@ -54,7 +54,7 @@ For the information about how to clone the desired repository, running the local
 - Morph-ripple demo on other elements.
 
   <p align="center">
-    <img src="./demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
+    <img src="https://github.com/moduware/morph-ripple/blob/master/demo-images/tabbar-demo.gif" alt="morph ripple demo image" />
   </p>
 
   ```html
@@ -74,7 +74,7 @@ For the information about how to clone the desired repository, running the local
 
 
   <p align="center" >
-    <img src="./demo-images/button-demo.gif" alt="morph ripple demo image" />
+    <img src="https://github.com/moduware/morph-ripple/blob/master/demo-images/button-demo.gif" alt="morph ripple demo image" />
   </p>
 
   ```html
