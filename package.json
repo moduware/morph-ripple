@@ -1,6 +1,6 @@
 {
   "description": "General ripple animation element for Polymorph Components",
-  "name": "@polymer/morph-ripple",
+  "name": "@moduware/morph-ripple",
   "version": "1.0.0",
   "scripts": {
     "start": "polymer serve --npm --module-resolution=node"
@@ -8,10 +8,10 @@
   "main": "morph-ripple.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "@polymer/polymer": "^3.0.0",
-    "@webcomponents/webcomponentsjs": "^2.0.0"
+    "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.0.0",
     "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
     "wct-browser-legacy": "^1.0.1",
     "morph-element": "github:moduware/morph-element#master",
