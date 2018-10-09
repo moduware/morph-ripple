@@ -5,7 +5,7 @@
     "url": "https://github.com/moduware/morph-ripple"
   },
   "name": "@moduware/morph-ripple",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "start": "polymer serve --npm --module-resolution=node"
   },
