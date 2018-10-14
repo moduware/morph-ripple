@@ -8,7 +8,7 @@
   "version": "1.0.2",
   "scripts": {
     "start": "polymer serve --npm --module-resolution=node",
-    "test": "wct -l chrome -l safari"
+    "test": "wct"
   },
   "main": "morph-ripple.js",
   "license": "Apache-2.0",

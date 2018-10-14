@@ -1,5 +1,10 @@
 {
   "expanded": true,
   "npm": true,
-  "moduleResolution": "node"
+  "moduleResolution": "node",
+  "plugins": {
+    "local": {
+      "browsers": ["safari", "chrome"]
+    }
+  }
 }
