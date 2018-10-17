@@ -4,7 +4,26 @@
   "moduleResolution": "node",
   "plugins": {
     "local": {
-      "browsers": ["safari", "chrome"]
+      "browsers": [
+        "chrome",
+        "safari"
+      ]
+    },
+    "istanbub": {
+      "reporters": [
+        "text-summary",
+        "lcov",
+        "html",
+        "text"
+      ],
+      "npm": true,
+      "moduleResolution": "node",
+      "include": [
+        "/morph-ripple.js"
+      ],
+      "exclude": [
+        "**/test/**"
+      ]
     }
   }
 }

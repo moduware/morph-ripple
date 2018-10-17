@@ -16,13 +16,14 @@
     "@polymer/polymer": "^3.0.0"
   },
   "devDependencies": {
-    "@webcomponents/webcomponentsjs": "^2.0.0",
     "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
-    "wct-browser-legacy": "^1.0.1",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
     "morph-element": "github:moduware/morph-element#master",
+    "morph-shared-colors": "github:moduware/morph-shared-colors#master",
+    "morph-shared-styles": "github:moduware/morph-shared-styles#master",
     "morph-tabbar": "github:moduware/morph-tabbar#polymer3",
     "morph-tabbar-item": "github:moduware/morph-tabbar-item#polymer3",
-    "morph-shared-colors": "github:moduware/morph-shared-colors#master",
-    "morph-shared-styles": "github:moduware/morph-shared-styles#master"
+    "wct-browser-legacy": "^1.0.1",
+    "wct-istanbub": "^0.2.7"
   }
 }
