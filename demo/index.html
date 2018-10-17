@@ -10,21 +10,11 @@
 
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
     <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
-    <script type="module" src="../node_modules/morph-shared-colors/morph-shared-colors.js"></script>
-    <script type="module" src="../node_modules/morph-shared-styles/morph-shared-styles.js"></script>
-    <script type="module" src="../node_modules/morph-tabbar/morph-tabbar.js"></script>
-    <script type="module" src="../node_modules/morph-tabbar-item/morph-tabbar-item.js"></script>
+    <script type="module" src="../node_modules/@moduware/morph-shared-colors/morph-shared-colors.js"></script>
+    <script type="module" src="../node_modules/@moduware/morph-shared-styles/morph-shared-styles.js"></script>
+    <script type="module" src="../node_modules/@moduware/morph-tabbar/morph-tabbar.js"></script>
+    <script type="module" src="../node_modules/@moduware/morph-tabbar-item/morph-tabbar-item.js"></script>
 
-    <!-- <script type="module" src="../morph-ripple.js"></script> -->
-
-    <!-- FIXME(polymer-modulizer):
-        These imperative modules that innerHTML your HTML are
-        a hacky way to be sure that any mixins in included style
-        modules are ready before any elements that reference them are
-        instantiated, otherwise the CSS @apply mixin polyfill won't be
-        able to expand the underlying CSS custom properties.
-        See: https://github.com/Polymer/polymer-modulizer/issues/154
-        -->
     <script type="module">
       var $_documentContainer = document.createElement('template');
 
@@ -75,9 +65,9 @@
         <demo-snippet>
           <template>
             <morph-tabbar platform="android" selected="play">
-              <morph-tabbar-item platform="android" name="play" not-selected-image="../node_modules/morph-tabbar/img/play_android.svg" selected-image="../node_modules/morph-tabbar/img/play_android_selected.svg"></morph-tabbar-item>
-              <morph-tabbar-item platform="android" name="favorite" not-selected-image="../node_modules/morph-tabbar/img/favorite_android.svg" selected-image="../node_modules/morph-tabbar/img/favorite_android_selected.svg"></morph-tabbar-item>
-              <morph-tabbar-item platform="android" name="mic" not-selected-image="../node_modules/morph-tabbar/img/mic_android.svg" selected-image="../node_modules/morph-tabbar/img/mic_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="play" not-selected-image="../node_modules/@moduware/morph-tabbar/img/play_android.svg" selected-image="../node_modules/@moduware/morph-tabbar/img/play_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="favorite" not-selected-image="../node_modules/@moduware/morph-tabbar/img/favorite_android.svg" selected-image="../node_modules/@moduware/morph-tabbar/img/favorite_android_selected.svg"></morph-tabbar-item>
+              <morph-tabbar-item platform="android" name="mic" not-selected-image="../node_modules/@moduware/morph-tabbar/img/mic_android.svg" selected-image="../node_modules/@moduware/morph-tabbar/img/mic_android_selected.svg"></morph-tabbar-item>
             </morph-tabbar>
           </template>
         </demo-snippet>

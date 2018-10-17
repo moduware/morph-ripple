@@ -3,7 +3,8 @@
   "name": "@moduware/morph-ripple",
   "version": "1.0.0",
   "scripts": {
-    "start": "polymer serve --npm --module-resolution=node"
+    "start": "polymer serve --npm --module-resolution=node",
+    "test": "wct"
   },
   "main": "morph-ripple.js",
   "license": "Apache-2.0",
@@ -14,10 +15,11 @@
     "@webcomponents/webcomponentsjs": "^2.0.0",
     "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
     "wct-browser-legacy": "^1.0.1",
-    "morph-element": "github:moduware/morph-element#master",
-    "morph-tabbar": "github:moduware/morph-tabbar#polymer3",
-    "morph-tabbar-item": "github:moduware/morph-tabbar-item#polymer3",
-    "morph-shared-colors": "github:moduware/morph-shared-colors#master",
-    "morph-shared-styles": "github:moduware/morph-shared-styles#master"
+    "@moduware/morph-element": "^1.0.0",
+    "@moduware/morph-tabbar": "^1.0.0",
+    "@moduware/morph-tabbar-item": "^1.0.0",
+    "@moduware/morph-shared-colors": "^1.0.0",
+    "@moduware/morph-shared-styles": "^1.0.0",
+    "wct-istanbub": "^0.2.7"
   }
 }
