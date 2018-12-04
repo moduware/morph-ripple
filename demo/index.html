@@ -13,11 +13,12 @@
     <script type="module" src="../node_modules/@moduware/morph-shared-colors/morph-shared-colors.js"></script>
     <script type="module" src="../node_modules/@moduware/morph-shared-styles/morph-shared-styles.js"></script>
     <script type="module" src="../node_modules/@moduware/morph-tabbar/morph-tabbar.js"></script>
-    <script type="module" src="../node_modules/@moduware/morph-tabbar-item/morph-tabbar-item.js"></script>
+    <!-- <script type="module" src="../node_modules/@moduware/morph-tabbar-item/morph-tabbar-item.js"></script> -->
+    <script type="module" src="../morph-ripple.js"></script>
 
     <script type="module">
       var $_documentContainer = document.createElement('template');
-
+      
       $_documentContainer.innerHTML = /*html*/`
       <custom-style>
         <style is="custom-style" include="demo-pages-shared-styles">
@@ -39,7 +40,7 @@
 
   </head>
   <body>
-
+    
     <script type="module">
       var $_documentContainer = document.createElement('template');
 
@@ -53,6 +54,14 @@
             </div>
           </template>
         </demo-snippet>
+        <demo-snippet>
+          <template>
+            <div class="ripple-wrapper red">
+              <morph-ripple></morph-ripple>
+            </div>
+          </template>
+        </demo-snippet>
+
         <demo-snippet>
           <template>
             <div class="ripple-wrapper red">

@@ -19,6 +19,12 @@
       </template>
     </test-fixture>
 
+    <test-fixture id="FunctionTestFixture">
+      <template>
+        <morph-ripple></morph-ripple>
+      </template>
+    </test-fixture>
+
     <script type="module">
 
       describe('morph-ripple', function() {
@@ -46,13 +52,52 @@
             
           });
 
-          it('showRipple() method is called when morph-ripple is clicked', function() {
+          it('showRipple() method is called when morph-ripple is clicked', async function() {
+            await ripple.updateComplete;
+
             let mouseDown = new Event('down');
             ripple.dispatchEvent(mouseDown);
             // Count # of calls to showRipple
             expect(spy.calledOnce).to.be.true;
           });
 
+        });
+
+        context('showRipple(e)', () => {
+          let element;
+
+          beforeEach(function() {
+            element = fixture('FunctionTestFixture');
+          })
+
+          it('Should call showRipple() without error', async () => {
+            await element.updateComplete;
+
+            var event = new CustomEvent('click', {
+              detail: { dx: 200 }
+            });
+
+            element.showRipple(event);
+
+            expect(element).to.be.ok;
+          });
+        });
+        
+        // cleanUp()
+        context('cleanUp()', () => {
+          let element;
+
+          beforeEach(function () {
+            element = fixture('FunctionTestFixture');
+          })
+
+          it('Should call showRipple() without error', async () => {
+            await element.updateComplete;
+
+            element.cleanUp();
+
+            expect(element).to.be.ok;
+          });
         });
 
       });

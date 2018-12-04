@@ -1,4 +1,4 @@
-import { PolymerElement, html } from '@polymer/polymer/polymer-element.js';
+import { LitElement, html } from '@polymer/lit-element/lit-element.js';
 import '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
 import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
@@ -12,8 +12,8 @@ import { timeOut } from '@polymer/polymer/lib/utils/async.js';
  * @extends HTMLElement
  * @demo demo/index.html
  */
-export class MorphRipple extends PolymerElement {
-  static get template() {
+export class MorphRipple extends LitElement {
+  render() {
     return html`
     <style>
       :host {
@@ -56,8 +56,8 @@ export class MorphRipple extends PolymerElement {
     };
   }
 
-  ready() {
-    super.ready();
+  firstUpdated() {
+    super.firstUpdated();
 
     /**
      * Gesture addListener down
@@ -98,37 +98,41 @@ export class MorphRipple extends PolymerElement {
    * @return {Object}   - returns the style attribute of the button element with corresponding css styling related to the ripple effect
    */
   showRipple(e) {
-   const ripple = document.createElement('span');
-   const size = this.offsetWidth;
-   const pos = this.getBoundingClientRect();
+    const ripple = document.createElement('span');
+    const size = this.offsetWidth;
+    const pos = this.getBoundingClientRect();
 
-   // for computation of style top and left using Polymer Gesture implementation
-   const x = e.detail.x - pos.left - size / 2; 
-   const y = e.detail.y - pos.top - size / 2;
+    // for computation of style top and left using Polymer Gesture implementation
+    const x = e.detail.x - pos.left - size / 2; 
+    const y = e.detail.y - pos.top - size / 2;
 
-   const style =
-     'top:' +
-     y +
-     'px; left: ' +
-     x +
-     'px; height: ' +
-     size +
-     'px; width: ' +
-     size +
-     'px;';
-
-   this.$.container.appendChild(ripple);
+    const style =
+      'top:' +
+      y +
+      'px; left: ' +
+      x +
+      'px; height: ' +
+      size +
+      'px; width: ' +
+      size +
+      'px;'
+    ;
+    const shadow = this.shadowRoot;
+    const container = shadow.querySelector('#container');
+    container.appendChild(ripple);
    
-   return ripple.setAttribute('style', style);
+    return ripple.setAttribute('style', style);
  }
 
   /**
    * clean up the container for the ripple effect
    */
   cleanUp() {
+    const shadow = this.shadowRoot;
+    const container = shadow.querySelector('#container');
     
-    while (this.$.container.firstChild) {
-      this.$.container.removeChild(this.$.container.firstChild);
+    while (container.firstChild) {
+      container.removeChild(container.firstChild);
     }
   }
 }
