@@ -1,4 +1,4 @@
-import { LitElement, html } from '@polymer/lit-element/lit-element.js';
+import { LitElement, html, css } from 'lit-element/lit-element.js';
 import '@polymer/polymer/lib/mixins/gesture-event-listeners.js';
 import { addListener } from '@polymer/polymer/lib/utils/gestures.js';
 import { Debouncer } from '@polymer/polymer/lib/utils/debounce.js';
@@ -13,40 +13,43 @@ import { timeOut } from '@polymer/polymer/lib/utils/async.js';
  * @demo demo/index.html
  */
 export class MorphRipple extends LitElement {
+  static get styles() {
+    return [ 
+      css`
+        :host {
+          --ripple-color: #2196f3;
+          overflow: hidden;
+        }
+
+        :host, .container {
+          display: block;
+          position: absolute;
+          top: 0; right: 0; bottom: 0; left: 0;
+          /* pointer-events: none; */
+        }
+
+        .container span {
+          transform: scale(0);
+          border-radius: 100%;
+          position: absolute;
+          opacity: 0.75;
+          background-color: var(--ripple-color);
+          animation: ripple 1000ms;
+        }
+
+        @keyframes ripple {
+          to {
+            opacity: 0;
+            transform: scale(2);
+          }
+        } 
+      `
+    ];
+  }
   render() {
     return html`
-    <style>
-      :host {
-        --ripple-color: #2196f3;
-        overflow: hidden;
-      }
-
-      :host, .container {
-        display: block;
-        position: absolute;
-        top: 0; right: 0; bottom: 0; left: 0;
-        /* pointer-events: none; */
-      }
-
-      .container span {
-        transform: scale(0);
-        border-radius: 100%;
-        position: absolute;
-        opacity: 0.75;
-        background-color: var(--ripple-color);
-        animation: ripple 1000ms;
-      }
-
-      @keyframes ripple {
-        to {
-          opacity: 0;
-          transform: scale(2);
-        }
-      }
-    </style>
-    
-    <div id="container" class="container"></div>
-`;
+      <div id="container" class="container"></div>
+    `;
   }
 
   static get is() { return 'morph-ripple'; }

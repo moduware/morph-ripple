@@ -13,7 +13,7 @@
   "main": "morph-ripple.js",
   "license": "Apache-2.0",
   "dependencies": {
-    "@polymer/lit-element": "^0.6.2"
+    "lit-element": "^2.0.1"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.18",
